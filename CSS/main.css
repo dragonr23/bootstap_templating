@@ -2,6 +2,7 @@ body {
   background-color: steelblue;
   /* bootstrap always adds a bit extra  */
   overflow-x: hidden;
+  color: grey;
 }
 
 
@@ -25,7 +26,15 @@ body {
 
 .card-title {
   font-size: 130%;
-font-weight: bold;
+  font-weight: bold;
+  color: black;
+}
+
+.article-header {
+  font-size: 200%;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
 }
 .card-subtitle {
   font-size:90%;
@@ -38,6 +47,10 @@ font-weight: bold;
   text-align: justify;
   /* top right bottom left for laying it out */
   padding: 15px 0px;
+}
+
+.author {
+  text-align: right;
 }
 
 .btn {
@@ -60,6 +73,14 @@ font-weight: bold;
   margin: 25px auto;
   width: 85%;
   border-radius: 25px;
+}
+
+.large-center-img {
+
+  display: block;
+  margin: 25px auto;
+  width: 100%;
+
 }
 
 footer {
