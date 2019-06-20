@@ -49,6 +49,51 @@
 
     <main>
 
+      <div class="container">
+
+        <div class="row">
+
+          <!-- offsetting into the middle -->
+          <!-- .col-md-4.offset-md-4 -->
+
+          <!-- the last two column things change the widths and the heights with responsive design  -->
+          <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2">
+            <div class="card">
+              <!-- the action is deciding where the form sends the data. the method is how it sends the data...php kinda a dead language will be using python.. when you use method get it is quicker but it is not secure... when you send via post it gets sent in a header and this header is sent it is encrypted they all get sent with 8 trucks on a high way. the data is sent separately it is put together on the other end. USE POST IF SENDING CONFIDENTIAL INFROMATION ON ANYTHING NOT PUBLIC. In the URL after you press submit the ? shows the actual parameters that were sent. When you store passwords you must store and encrypt with an algorithm. we will get into (head and put) those when we get into those when we use an API-->
+              <form  action="https://www.w3schools.com/action_page.php" method="get">
+                <label for="country">Enter Country</label>
+                <!-- placeholder versus value = value is default type. required means they have to put it out -->
+                <input type="text" name="country" value="US" required>
+                <label for="car">Choose Your Car</label>
+                <!-- this is a drop down menu -->
+                <select  name="car">
+                  <option value="honda">Honda</option>
+                  <option value="ford">Ford</option>
+
+                </select>
+                <label for="message">Write Your Message</label>
+                <!-- you can set a max width with a class with this and it would fix the ugly problem -->
+                <textarea placeholder="What are you doing?" name="message" rows="4" cols="1000"></textarea>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="female" value="female">Male</input>
+                <input type="radio" name="female" value="female">Female</input>
+
+                <label for="date">Choose a Date:</label>
+                <!-- what a beautiful date picker. Other inputs we have just put in input: and a bunch of them will show.. hidden input or email... hidden hides the whole input -->
+                <input type="date" name="date">
+                <input type="submit" name="submit" value="Send Form">
+
+              </form>
+            </div><!--Ends card for form-->
+          </div><!--ends col 4 for form-->
+
+
+
+        </div><!--ends row-->
+
+
+      </div><!-- Ends container -->
+
     </main>
 
 

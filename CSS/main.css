@@ -67,6 +67,24 @@ font-weight: bold;
   text-align: right;
 }
 
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+input {
+  display: block;
+  margin-top: 15px;
+}
+
+/* so the max-width works based upon the parent container */
+textarea {
+
+  max-width: 100%;
+}
+
+
 
 footer {
   margin-top: 100px;
